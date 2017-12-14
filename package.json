@@ -1,0 +1,15 @@
+{
+    "name": "tick-react",
+    "version": "0.1.0",
+    "private": true,
+    "dependencies": {
+        "babel": "^6.23.0",
+        "react": "^16.2.0",
+        "react-dom": "^16.2.0",
+        "webpack": "^3.10.0"
+    },
+    "scripts": {
+        "start": "webpack --config webpack.config.js"
+    },
+    "devDependencies": {}
+}
