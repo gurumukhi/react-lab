@@ -10,5 +10,8 @@
         "react": "^16.2.0",
         "react-dom": "^16.2.0"
     },
+    "scripts": {
+        "build": "browserify -t [ babelify --presets [ react ] ] src/index.js -o src/app.js"
+    },
     "devDependencies": {}
 }
