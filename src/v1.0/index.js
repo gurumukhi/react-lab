@@ -1,6 +1,3 @@
-const ReactDOM = require('react-dom');
-const React = require('react');
-
 class Clock extends React.Component {
   constructor (props) {
     super(props);
@@ -23,7 +20,6 @@ class Clock extends React.Component {
 
   render () {
     return <div> {this.state.time.toLocaleTimeString()} </div>;
-    // return "abc"
   }
 }
 

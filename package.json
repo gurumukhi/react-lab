@@ -4,12 +4,11 @@
     "private": true,
     "dependencies": {
         "babel": "^6.23.0",
+        "babel-core": "^6.26.0",
+        "babel-preset-react": "^6.24.1",
+        "babelify": "^8.0.0",
         "react": "^16.2.0",
-        "react-dom": "^16.2.0",
-        "webpack": "^3.10.0"
-    },
-    "scripts": {
-        "start": "webpack --config webpack.config.js"
+        "react-dom": "^16.2.0"
     },
     "devDependencies": {}
 }
