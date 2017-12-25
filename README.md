@@ -20,3 +20,7 @@
  * npm scripts - To run complex commands, withouth having to remember them and without making tools installed globally
 * Dependencies: babel-core babel-preset-react babelify browserify react react-dom
 * Tip: Using .babelrc will not need specifying preset from command `browserify -t [ babelify --presets [ react ] ]`
+
+Other useful links
+==================
+* Step by step building a react app https://codeutopia.net/blog/2016/02/01/react-application-data-flow-where-and-how-to-store-your-data/

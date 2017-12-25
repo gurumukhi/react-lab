@@ -43,6 +43,7 @@ class Welcome extends React.Component {
 * State Updates are Merged & State Updates May Be Asynchronous
 * A component may choose to pass its state down as props to its child components.
     <h2>It is {this.state.date.toLocaleTimeString()}.</h2>
+* Sequence: constructor, componentDidMount, render, componentWillUnmount
 
 5. Handling Events
 ===================
@@ -51,7 +52,7 @@ class Welcome extends React.Component {
 * Passing argument ot evHandler
  * <button onClick={(e) => this.deleteRow(id, e)}>Delete Row</button>
  * <button onClick={this.deleteRow.bind(this, id)}>Delete Row</button>
-* Binding to this -
+* Binding evHandler to `this` -
 
 class Toggle extends React.Component {
   constructor(props) {
@@ -66,3 +67,9 @@ class Toggle extends React.Component {
     );
   }
 }
+
+6. More
+=======
+* An input form element whose value is controlled by React in this way is called a “controlled component”.
+* There should be a single “source of truth” for any data that changes in a React application. Usually, the state is first added to the component that needs it for rendering. Then, if other components also need it, you can lift it up to their closest common ancestor. Instead of trying to sync the state between different components, you should rely on the top-down data flow.
+* React has a powerful composition model, and recommends using composition instead of inheritance to reuse code between components.
