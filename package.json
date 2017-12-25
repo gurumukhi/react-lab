@@ -3,15 +3,14 @@
     "version": "0.1.0",
     "private": true,
     "dependencies": {
-        "babel": "^6.23.0",
         "babel-core": "^6.26.0",
         "babel-preset-react": "^6.24.1",
         "babelify": "^8.0.0",
+        "browserify": "^14.5.0",
         "react": "^16.2.0",
         "react-dom": "^16.2.0"
     },
     "scripts": {
-        "build": "browserify -t [ babelify --presets [ react ] ] src/index.js -o src/app.js"
-    },
-    "devDependencies": {}
+        "buildv2": "browserify -t babelify src/v0.0.2/index.js > src/v0.0.2/build/app.js"
+    }
 }
